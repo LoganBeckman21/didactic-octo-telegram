@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer</title>
+
+  <!--links to CSS style file  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./style/style.css">
+
+  <!-- links JS script file -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
+<script  src="./script/script.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- creates the nav bar at the top -->
+  <div class="topnav">
+    <a class="nav-item nav-link active" href="./index.html">Home</a>
+    <a class="nav-item nav-link" href="./improved.html">Improved Design</a>
+    <a class="nav-item nav-link" href="https://github.com/LoganBeckman21/didactic-octo-telegram" target="_blank">Github Repo</a>
+  </div>
+ 
+  <!-- creates the timer container with the inputs for time. Also has the start/ reset buttons as well as the timer countdown.  -->
+  <div class="timer-container">
+    <h1>iPhone Timer</h1>
+    <div class="timer-inputs">
+      <label for="hours">Set hours:</label>
+      <input type="number" id="hours" min="0">
+      <label for="minutes">Set minutes:</label>
+      <input type="number" id="minutes" min="0" max="59">
+      <label for="seconds">Set seconds:</label>
+      <input type="number" id="seconds" min="0" max="59">
+    </div>
+    <div class="timer-buttons">
+      <button class="start-button" onclick="startTimer()">Start</button>
+      <button class="stop-button" onclick="stopTimer()">Reset</button>
+    </div>
+    <p class="timer-display" id="timerDisplay">00:00:00</p>
+  </div>
+
+</body>
+</html>
